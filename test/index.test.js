@@ -26,8 +26,8 @@ test("is red dark", () => {
 });
 
 test("is lighter red dark", () => {
-  expect(new Color("#D14233").isDark()).toEqual(false);
-  expect(new Color("#D14233").isLight()).toEqual(true);
+  expect(new Color("#D14233").isDark()).toEqual(true);
+  expect(new Color("#D14233").isLight()).toEqual(false);
 });
 
 test("lighten black", () => {

@@ -61,11 +61,12 @@ export default class{
   }
 
   isDark() {
-    return(this.color[2] < 50);
+    const rgb = HSLToRGB(this.color);
+    return(((rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000) < 128);
   }
 
   isLight() {
-    return(this.color[2] >= 50);
+    return(!this.isDark());
   }
 
   lighten(percent) {
