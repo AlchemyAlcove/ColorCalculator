@@ -20,6 +20,16 @@ test("is dark when not dark", () => {
   expect(new Color("#999999").isDark()).toEqual(false);
 });
 
+test("is red dark", () => {
+  expect(new Color("#C0392B").isDark()).toEqual(true);
+  expect(new Color("#C0392B").isLight()).toEqual(false);
+});
+
+test("is lighter red dark", () => {
+  expect(new Color("#D14233").isDark()).toEqual(false);
+  expect(new Color("#D14233").isLight()).toEqual(true);
+});
+
 test("lighten black", () => {
   expect(new Color("#000").lighten(33).toHex()).toEqual("#545454");
 });
