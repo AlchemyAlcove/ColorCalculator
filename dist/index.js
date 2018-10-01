@@ -88,12 +88,13 @@ var _class = function () {
   }, {
     key: "isDark",
     value: function isDark() {
-      return this.color[2] < 50;
+      var rgb = (0, _hslToRgb2.default)(this.color);
+      return (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000 < 128;
     }
   }, {
     key: "isLight",
     value: function isLight() {
-      return this.color[2] >= 50;
+      return !this.isDark();
     }
   }, {
     key: "lighten",
