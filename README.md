@@ -4,6 +4,14 @@ ColorCalculator is color manipulation library.
 
 [![CircleCI](https://circleci.com/gh/AlchemyAlcove/ColorCalculator.svg?style=svg&circle-token=dc04a87232f2fce84b4c2bd54980c5d105485b76)](https://circleci.com/gh/AlchemyAlcove/ColorCalculator)
 
+2KB download size minified.
+
+This project has two dependencies.
+
+[RGBtoHSL](https://github.com/AlchemyAlcove/RGBtoHSL)
+
+[HSLtoRGB](https://github.com/AlchemyAlcove/HSLtoRGB)
+
 ![Color Calculator](https://media.giphy.com/media/G0vaYbZDJV0cM/giphy.gif)
 
 ## Install
